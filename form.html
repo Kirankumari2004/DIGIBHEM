@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2>Welcome To Hotel Grand</h2>
+    <form id="booking-form">
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer-name" required><br><br>
+
+        <label for="check-in-date">Check-in Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required><br><br>
+
+        <label for="total-days">Total No of Days:</label>
+        <input type="number" id="total-days" name="total-days" required><br><br>
+
+        <label for="total-persons">Total No of Persons:</label>
+        <input type="number" id="total-persons" name="total-persons" required><br><br>
+
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type">
+            <option value="Delux Room ">Delux Room </option>
+            <option value="Suite Room ">Suite Room </option>
+        </select><br><br>
+
+        <label for="advance-amount">Advance Amount:</label>
+        <input type="number" id="advance-amount" name="advance-amount" required><br><br>
+
+        <label for="amenities">Amenities:</label>
+        <select id="amenities" name="amenities">
+            <option value="AC">AC</option>
+            <option value="Locker">Locker</option>
+        </select><br><br>
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button><br><br>
+
+        <label for="total-room-cost">Total Room Cost:</label>
+        <input type="text" id="total-room-cost" name="total-room-cost" readonly><br><br>
+
+        <label for="total-amenities-cost">Total Amenities Cost:</label>
+        <input type="text" id="total-amenities-cost" name="total-amenities-cost" readonly><br><br>
+
+        <label for="total-cost">Total Cost:</label>
+        <input type="text" id="total-cost" name="total-cost" readonly><br><br>
+
+        <label for="balance">Balance:</label>
+        <input type="text" id="balance" name="balance" readonly><br><br>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+<script src="script.js"></script>
+</body>
+</html>
